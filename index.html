@@ -8,6 +8,86 @@
     <title> Form Devs </title>
 </head>
 <body>
-    <h1> Cadastro de Devs </h1>
+    <div>
+        <h1> Cadastro de Devs </h1>
+        <p> Preencha suas informações </p>
+    </div>
+
+    <form> 
+        <fieldset>
+            <div>
+                <label> Nome </label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+
+            <div>
+                <label> Sobrenome </label>
+                <input type="text" required>
+            </div>
+        </fieldset>
+
+        <div>
+            <label> Email </label>
+            <input type="email" name="email" id="email" placeholder="example@email.com" required>
+        </div>
+
+        <div>
+            <label> Qual lado da aplicação você desenvolve? </label>
+
+            <label> 
+                <input type="radio" name="devweb" value="frontend" checked> Front-End
+            </label>
+
+            <label> 
+                <input type="radio" name="devweb" value="backend"> Back-End
+            </label>
+
+            <label> 
+                <input type="radio" name="devweb" value="fullstack"> Full Stack
+            </label>
+        </div>
+
+        <div>
+            <label> Senioridade </label>
+                <select>
+                    <option selected disabled value=""> Selecione </option>
+                    <option> Junior </option>
+                    <option> Pleno </option>
+                    <option> Senior </option>
+                </select>
+        </div>
+        <fieldset>
+            <div>
+                <label> Selecione as tecnologias que você utiliza: </label>
+
+                <input type="checkbox" id="tecnologiaHTML" name="tec1" value="HTML">
+                <label for="tecnologiaHTML"> HTML </label>
+
+                <input type="checkbox" id="tecnologiaCSS" name="tec2" value="CSS">
+                <label for="tecnologiaCSS"> CSS </label>
+
+                <input type="checkbox" id="tecnologiaJS" name="tec3" value="JavaScript">
+                <label for="tecnologiaJS"> JavaScript </label>
+
+                <input type="checkbox" id="teclogiaPHP" name="tec4" value="PHP">
+                <label for="tecnologiaPHP"> PHP </label>
+
+                <input type="checkbox" id="tecnologiaC#" name="tec5" value="C#">
+                <label for="tecnologiaC#"> C# </label>
+
+                <input type="checkbox" id="tecnologiaPython" name="tec6" value="Python">
+                <label for="tecnologiaPython"> Python </label>
+
+                <input type="checkbox" id="tecnologiaJava" name="tec7" value="Java">
+                <label for="tecnologiaJava"> Java </label>
+            </div>
+        </fieldset>
+
+        <div>
+            <label for="trajetoria"> Conte um pouco da sua trajetória como Dev </label>
+            <textarea name="trajetoria" id="trajetoria" cols="30" rows="4"> </textarea>
+            <button type="submit"> Concluir </button>
+        </div>
+    </form>
 </body>
 </html>
