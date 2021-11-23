@@ -1,109 +1,46 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@200;400&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title> Página Teste </title>
+</head>
+<body>
+    <header>
+        <img id="robo" src=".//assets/robo.png" alt="Logo robo">
+        <h2 class="main-title" > Twisted Tech </h2>
+    </header>
 
-    <head>
-        <meta charset="UTF-8">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="main-title.css">
-        <link rel="stylesheet" href="reset.css">
+    <nav>
+        <ul>
+            <li> <a href="#"> Home </a></li>
+            <li> <a href="#"> Produtos </a></li>
+            <li> <a href="#"> Equipe </a></li>
+            <li> <a href="#"> Contato </a></li>
+            <li> <a href="#"> Sobre  </a></li>
+        </ul>
+    </nav>
 
-        <title> Cadastro Devs </title>
-    </head>
-
-    <body>  
-
-        <div class="main-title">
-            <h1 id="titulo"> Cadastro de Devs </h1>
-            <p id="subtitulo"> Complete suas informações </p>
-            <br>
+    <main>
+        <div class="box">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus reprehenderit adipisci eum ut placeat. Repellendus, cumque! Minima minus odio fugiat provident, cum quod magni sed voluptatum ipsam sit impedit rem.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus reprehenderit adipisci eum ut placeat. Repellendus, cumque! Minima minus odio fugiat provident, cum quod magni sed voluptatum ipsam sit impedit rem.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus reprehenderit adipisci eum ut placeat. Repellendus, cumque! Minima minus odio fugiat provident, cum quod magni sed voluptatum ipsam sit impedit rem.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus reprehenderit adipisci eum ut placeat. Repellendus, cumque! Minima minus odio fugiat provident, cum quod magni sed voluptatum ipsam sit impedit rem.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus reprehenderit adipisci eum ut placeat. Repellendus, cumque! Minima minus odio fugiat provident, cum quod magni sed voluptatum ipsam sit impedit rem.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus reprehenderit adipisci eum ut placeat. Repellendus, cumque! Minima minus odio fugiat provident, cum quod magni sed voluptatum ipsam sit impedit rem.
         </div>
 
-        <form>
+        <div class="tecnologia"> 
+            <img class="tech" src=".//assets/tech1.png" alt="Logo Tech">
+        </div>
+    </main>
 
-            <fieldset class="wrap">
-                
-                <div class="group">
-                    <label for="nome"><strong> Nome </strong></label>
-                    <input type="text" name="nome" id="nome" required>
-                </div>
 
-                
-                <div class="group">
-                    <label for="sobrenome"><strong> Sobrenome </strong></label>
-                    <input type="text" name="sobrenome" id="sobrenome" required>
-                </div>
-            </fieldset> 
-
-            
-            <div class="group">
-                <label for="email"><strong>Email</strong></label>
-                <input type="email" name="email" id="email" placeholder="example@email.com" required>
-            </div>
-
-            <div class="group">
-                <label><strong> De qual lado da aplicação você desenvolve? </strong></label>
-                <label>
-                    <input type="radio" name="devweb" value="frontend" checked>Front-end
-                </label>
-                <label>
-                    <input type="radio" name="devweb" value="backend">Back-end
-                </label>
-                <label>
-                    <input type="radio" name="devweb" value="fullstack">Fullstack
-                </label>
-            </div>
-
-            <div class="group">
-                <label for="senioridade"><strong>Senioridade</strong></label>
-                <select id="senioridade" required>
-                  <option selected disabled value="">Selecione</option>
-                  <option> Júnior </option>
-                  <option> Pleno </option>
-                  <option> Sênior </option>
-                </select>
-            </div>
-
-            <fieldset class="wrap">
-                
-                <div id="check">
-                    <label><strong> Selecione as tecnologias que utiliza: </strong></label><br><br>
-                    <input type="checkbox" id="tecnologiaHTML" name="tec1" value="HTML">
-                    <label for="tecnologiaHTML"> HTML</label>
-
-                    <input type="checkbox" id="tecnologiaCSS" name="tec2" value="CSS">
-                    <label for="tecnologiaCSS"> CSS</label>
-
-                    <input type="checkbox" id="tecnologiaJS" name="tec3" value="JavaScript">
-                    <label for="tecnologiaJS"> JavaScript</label>
-
-                    <input type="checkbox" id="tecnologiaPHP" name="tec4" value="PHP">
-                    <label for="tecnologiaPHP"> PHP</label>
-
-                    <input type="checkbox" id="tecnologiaC#" name="tec5" value="C#">
-                    <label for="tecnologiaC#"> C#</label>
-
-                    <input type="checkbox" id="tecnologiaPython" name="tec6" value="Python">
-                    <label for="tecnologiaPython"> Python</label>
-                    
-                    <input type="checkbox" id="tecnologiaJava" name="tec7" value="Java">
-                    <label for="tecnologiaJava"> Java</label>
-                </div>
-            </fieldset>
-
-            <div class="group">
-                <br>
-                <label for="experiencia"><strong>Conte um pouco mais da sua trajetória como Dev: </strong></label>
-                <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
-            </div>
-
-            <button class="botao" type="submit" onsubmit=""> Concluir </button>            
-
-        </form>
-
-    </body>
-
+</body>
 </html>
