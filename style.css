@@ -4,11 +4,13 @@ header {
     padding: 4rem 0;
     display: flex;
     justify-content: space-between;
+    max-width: 100vw;
 }
 
 header #robo {
     height: 8rem;
     width: 8rem;
+    margin-left: 2em;
 }
 
 header .main-title {
@@ -18,11 +20,13 @@ header .main-title {
     margin-right: auto;
     margin-left: auto;
     margin-top: 20px;
+    border-bottom: 2px solid white;
 }
 
 nav {
     background-color: lightgray;
     padding: 10px;
+    max-width: 100%;
 }
 
 nav ul {
@@ -36,6 +40,7 @@ nav ul {
 li {
     font-family: 'Gluten', cursive;
     margin-right: 10rem;
+    margin-left: 2rem;
 }
 
  a {
@@ -45,16 +50,20 @@ li {
 
 a:hover {
     color: white;
+    background-color: black;
+    transition: 300ms;
 }
 
 main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 100vh;
-    width: 100vw;
-    background-color: #4bcffa;
+    height: 80vh;
+    max-width: 100%;
+    background: linear-gradient(45deg, #54a0ff, #2e86de);
+    background-repeat: no-repeat;
     color: white;
+    border-bottom: 1px solid #000;
 }
 
 .box {
@@ -74,4 +83,21 @@ main {
     margin-top: 30px;
     margin-right: 50px;
     
+}
+
+.main-footer {
+    padding: 1rem 0;
+}
+
+.main-footer .robofooter {
+    display: block;
+    height: 8rem;
+    width: 8rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.main-footer p {
+    text-align: center;
+    font-size: 1em;
 }
