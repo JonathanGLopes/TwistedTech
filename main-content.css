@@ -60,3 +60,35 @@
     text-decoration: underline;
     cursor: pointer;
 }
+
+.circle {
+    background-color: rgba(191, 193, 197, 0.7);
+    margin: 3rem 0 0 4rem;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+}
+
+/*Conteúdo da página Equipe */
+
+.main-content .equipe {
+    width: 20rem;
+    height: 10rem;
+    line-height: 1.5em;
+    color: black;
+    font-size: 1.5em;
+    font-family: sans-serif;
+    margin-left: 5rem;
+    margin-top: 5rem;
+}
+
+.main-content .team {
+    margin-right: 5rem;
+    height: 40rem;
+    width: 40rem;
+}
+
+.main-content .equipetitle {
+    margin-bottom: 10px;
+    font-family: sans-serif;
+}
