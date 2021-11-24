@@ -1,8 +1,4 @@
-.main-nav {
-    background-color: lightgray;
-    padding: 10px;
-    max-width: 100%;
-}
+
 
 .main-nav .navigation {
     display: flex;
@@ -14,17 +10,17 @@
 
 .options {
     font-family: 'Gluten', cursive;
-    margin-right: 10rem;
+    margin-right: 2rem;
     margin-left: 2rem;
 }
 
 a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 a:hover {
     color: white;
-    background-color: black;
+    text-decoration: underline;
     transition: 350ms;
 }
