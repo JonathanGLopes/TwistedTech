@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="main-content.css">
     <link rel="stylesheet" href="main-header.css">
     <link rel="stylesheet" href="main-nav.css">
+    <link rel="stylesheet" href="main-form.css">
     <link rel="stylesheet" href="main-footer.css">
     <title> TT Contato </title>
 </head>
@@ -36,39 +37,47 @@
 
     <main class="main-content">
         <form>
-            <fieldset>
-                <div>
-                    <label for="nome"> Nome completo </label>
-                    <input type="text" name="nomecompleto" id="nome">
+            <div class="wrapper-form">
+                <fieldset>
+                    <div class="wrapform">
+                        <label for="nome"> Nome completo </label>
+                        <input type="text" name="nomecompleto" id="nome" required>
 
-                    <label for="email"> Email </label>
-                    <input type="email" name="email" id="email">
+                        <label for="email"> Email </label>
+                        <input type="email" name="email" id="email" required placeholder="example@email.com" >
 
-                    <label for="tel"> Telefone </label>
-                    <input type="tel" name="telefone" id="tel">
+                        <label for="tel"> Telefone </label>
+                        <input type="tel" name="telefone" id="tel" placeholder="(xx) xxxxx-xxxx">
 
-                    <label for="msg"> Mensagem </label>
-                    <input type="text" name="mensagem" id="msg">
+                        <label for="msg"> Mensagem </label>
+                        <textarea name="mensagem" id="msg" cols="50" rows="10"></textarea>
+                    </div>
+                </fieldset>
+
+                <div class="wrapradio">
+                    <label> Como prefere nosso contato? </label>
+
+                    <input type="radio" name="contato" value="WhatsApp" checked>
+                    <label> WhatsApp </label>
+
+                    <input type="radio" name="contato" value="Telefone">
+                    <label> Telefone </label>
+                    
+                    
+                    <input type="radio" name="contato" value="Email">
+                    <label> Email </label>
                 </div>
-            </fieldset>
 
-            <div>
-                <label> Como prefere nosso contato? </label>
-
-                <input type="radio" name="contato" value="WhatsApp" checked>
-                <label> WhatsApp </label>
-
-                <input type="radio" name="contato" value="Telefone">
-                <label> Telefone </label>
-                
-                
-                <input type="radio" name="contato" value="Email">
-                <label> Email </label>
+                <button class="button" type="submit"> Enviar </button>
             </div>
-
-            <button class="button" type="submit"> Enviar </button>
         </form>
+
+        <img class="contatoimg" src=".//assets/contato.png" alt="Imagem contato">
     </main>
 
+    <footer class="main-footer">
+        <img class="robofooter" src=".//assets/robo.png" alt="Logo robo">
+        <p> © Copyright Twisted Tech - 2021 </p>
+    </footer>
 </body>
 </html>

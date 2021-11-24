@@ -1,0 +1,52 @@
+.wrapper-form {
+    margin-left: 4em;
+    margin-top: 4em;
+}
+
+.wrapper-form .button {
+    margin-left: 10em;
+}
+
+.wrapform {
+    font-size: 1.3em; 
+    margin-left: 2em; 
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapform label {
+    margin-bottom: 0.3em;
+}
+
+.wrapform input {
+    padding: 10px 5px 5px 5px;
+    width: 20em;
+    border: 1px solid #000;
+    margin-bottom: 1.8em;
+    border-radius: 0.3rem;
+}
+
+.wrapform textarea {
+    border: 1px solid #000;
+    border-radius: 0.3rem;
+}
+
+.wrapradio {
+    font-size: 1.3em;
+    margin-left: 2em;
+    margin-top: 1em;
+}
+
+.button {
+    padding: 1em 10em;
+    border: 1px solid #000;
+    box-shadow: 1px 1px 1px #000;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-top: 2em;
+}
+
+.button:hover{
+    background-color: lightgray;
+    transition: 200ms;
+}
