@@ -1,6 +1,6 @@
 .main-header {
     background-color: black;
-    padding: 2rem 0;
+    padding: 1rem 0;
     max-width: 100vw;  
 }
 
@@ -35,4 +35,30 @@ dentro do pai e conseguindo mover os 2 filhos de forma diferente */
     justify-content: right;
     align-items: center;
     
+}
+
+@media only screen and (max-width: 1100px) {
+    .wrapper-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .main-header {
+        width: 100vw;
+        text-align: 1.5em;
+    }
+}
+
+@media only screen and (max-width: 840px) {
+    .main-header .main-title {
+        font-size: 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 720px ) {
+    .main-header .main-title {
+        font-size: 2rem;
+    }
 }
